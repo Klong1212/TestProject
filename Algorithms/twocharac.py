@@ -27,12 +27,3 @@ def alternate(s):
             max_length = max(max_length, len(filtered))
 
     return max_length
-
-if __name__ == '__main__':
-
-    l = int(input().strip())
-    s = input().strip()
-
-    result = alternate(s)
-
-    print(result)
