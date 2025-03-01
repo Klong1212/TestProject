@@ -1,0 +1,1 @@
+    print(alternatingCharacters(str(input())))  # 3

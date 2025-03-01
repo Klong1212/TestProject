@@ -47,7 +47,3 @@ class TestAlternate(unittest.TestCase):
     def test_complex_case(self):
         """Test with a complex string containing repeated characters."""
         self.assertEqual(alternate("asvkugfiugsalddlasguifgukvsa"), 8)
-
-if __name__ == '__main__':
-    import nose2
-    nose2.main()

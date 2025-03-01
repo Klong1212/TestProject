@@ -13,9 +13,3 @@ def caesarCipher(s, k):
             result += s[i]  # ถ้าไม่ใช่ตัวอักษร ให้ใส่ค่าตามเดิม
     return result
 
-if __name__ == '__main__':
-    n = int(input().strip())
-    s = input()
-    k = int(input().strip())
-    result = caesarCipher(s, k)
-    print(result)
