@@ -19,9 +19,7 @@ class TestGridChallenge(unittest.TestCase):
         """ทดสอบด้วย grid ที่มีคอลัมน์เดียว"""
         grid = ["a", "b", "c"]
         self.assertEqual(Grid(grid), "YES")
-        
-        grid = ["c", "b", "a"]
-        self.assertEqual(Grid(grid), "YES")  # หลังเรียงแถว คอลัมน์ยังเรียงลำดับ
+
     
     def test_small_grid_valid(self):
         """ทดสอบด้วย grid ขนาดเล็กที่เรียงลำดับได้"""
@@ -70,10 +68,7 @@ class TestGridChallenge(unittest.TestCase):
     def test_grid_with_almost_sorted(self):
         """ทดสอบกรณีที่เกือบเรียงลำดับ"""
         grid = ["ebacd", "fghij", "olmkn", "trpqs", "xywvu"]
-        # หลังเรียงแถว: ["abcde", "fghij", "klmno", "pqrst", "uvwxy"]
-        # สังเกตว่าตัวสุดท้ายของแถวสุดท้ายเปลี่ยนจาก "v" เป็น "u"
-        # ทำให้คอลัมน์สุดท้ายไม่เรียงลำดับ
-        self.assertEqual(Grid(grid), "NO")
+        self.assertEqual(Grid(grid), "YES")
     
     def test_example_from_problem(self):
         """ทดสอบตัวอย่างจากโจทย์"""

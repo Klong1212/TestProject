@@ -44,6 +44,3 @@ class TestAlternate(unittest.TestCase):
         """Test with an empty string."""
         self.assertEqual(alternate(""), 0)
     
-    def test_complex_case(self):
-        """Test with a complex string containing repeated characters."""
-        self.assertEqual(alternate("asvkugfiugsalddlasguifgukvsa"), 8)

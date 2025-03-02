@@ -35,4 +35,4 @@ class TestFunnyString(unittest.TestCase):
         
     def test_long_string(self):
         """Test with a longer string"""
-        self.assertEqual(funnyString("abcdefghijklmnopqrstuvwxyz"), "Not Funny")
+        self.assertEqual(funnyString("abcdefghijklmnopqrstuvwxyz"), "Funny")
